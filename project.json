@@ -1,0 +1,12 @@
+{
+  "project": "Redmi Buds 8 Pro PEQ Tuning Project",
+  "repository_suggestion": "Redmi-Buds-8-Pro-PEQ",
+  "visibility": "public",
+  "documentation_language": "English",
+  "license": "CC BY 4.0 for original project-authored materials only",
+  "profiles": [
+    "V1-192k-32Band",
+    "V2-A-192k-32Band"
+  ],
+  "created": "2026-11-09"
+}
