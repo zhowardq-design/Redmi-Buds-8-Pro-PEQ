@@ -2,14 +2,16 @@
 
 Community-oriented parametric EQ (PEQ) profiles and measurement-based tuning notes for the **Redmi Buds 8 Pro**.
 
-> **Status:** Experimental personal tuning project. V1 is the measurement-derived baseline. V2-A is a low-frequency listening experiment derived from V1 and has received an initial positive subjective listening report. It is not an official Xiaomi/Redmi product or profile.
+**Language / 语言:** [简体中文](README.zh-CN.md)
+
+> **Status:** V1 is the measurement-derived baseline. V2-A is the current default PEQ in the project owner's Redmi K-Pad + Redmi Buds 8 Pro + Poweramp setup, based on the listening evaluation documented in [Listening Notes](documentation/listening-notes.md). V2-A remains a personal listening-based revision, not an official Xiaomi/Redmi product or profile.
 
 ## Profiles
 
 | Profile | Description | Preamp | Status |
 |---|---|---:|---|
 | [V1 – 192 kHz / 32-band](profiles/Poweramp/V1-192k-32Band.txt) | Baseline profile fitted to the ReaLab Target Response (2024) using the 192 kHz measurement dataset | -1.5 dB | Baseline |
-| [V2-A – 192 kHz / 32-band](profiles/Poweramp/V2-A-192k-32Band.txt) | V1-derived experiment with a modest gain recovery in the low-frequency filters | -1.5 dB | Experimental |
+| [V2-A – 192 kHz / 32-band](profiles/Poweramp/V2-A-192k-32Band.txt) | V1-derived revision with a modest gain recovery in the low-frequency filters | -1.5 dB | Project owner's current default |
 
 Parameter comparison:
 - [CSV: V1 vs V2-A](profiles/Poweramp/PEQ-parameters-V1-V2-A.csv)
@@ -37,9 +39,9 @@ The change was motivated by listening to the opening cannon sound effects from a
 - Filter structure: 1 Low Shelf + 31 Peaking filters.
 - Fit range: 20 Hz–9 kHz; no compensation above 9 kHz.
 - The source workbook reports a model-fit RMSE of 0.174 dB. This is the numerical fitting error of the model, **not** a real-ear measurement error or a guarantee of perceived sound quality.
-- V2-A is not a new target-response fit. It is a controlled listening experiment derived from V1.
+- V2-A is a controlled listening-led revision derived from V1, not a new target-response fit.
 
-Supporting source measurement data was used during development but is not redistributed in this starter package pending confirmation of its reuse terms. See [Measurement Data](measurements/README.md).
+Supporting source measurement data was used during development but is not redistributed in this repository pending confirmation of its reuse terms. See [Measurement Data](measurements/README.md).
 
 ## Installation
 
@@ -62,9 +64,9 @@ The text profiles use a readable AutoEQ/Poweramp-style filter notation. Compatib
 ## Repository contents
 
 - `profiles/Poweramp/` – importable text profiles and parameter comparison.
-- `measurements/` – supporting frequency-response workbook and source plot.
+- `measurements/` – notes about supporting frequency-response data.
 - `analysis/1812-overture/` – notes about the cannon-effect test; copyrighted audio is not redistributed here.
-- `documentation/` – tuning method, listening notes, and version history.
+- `documentation/` – tuning method and listening notes.
 
 ## License
 
